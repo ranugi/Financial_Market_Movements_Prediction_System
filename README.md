@@ -1,6 +1,6 @@
 # Financial_Market_Movements_Prediction_System
 The project focuses on predicting NASDAQ stock prices using both machine learning and deep learning techniques. To predict stock prices and other financial indicators using different models.
-NASDAQ Stock Price Prediction - Quant Researcher Assessment
+(NASDAQ Stock Price Prediction - Quant Researcher Assessment)
 
 This repository contains the solution to the Quant Researcher Assessment focused on predicting NASDAQ stock prices using deep learning models.
 
