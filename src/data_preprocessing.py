@@ -29,7 +29,7 @@ import torch.optim as optim
 from google.colab import drive
 drive.mount('/content/drive')
 
-file_path = '/content/drive/MyDrive/DataSets/NASDAQ_Historical_Prices.csv'
+file_path = '/content/drive/My Drive/Colab_Notebooks/NASDAQ_Historical_Prices.csv'
 
 df = pd.read_csv(file_path)
 
@@ -120,4 +120,4 @@ df.to_csv("cleaned_dataset.csv", index=False)
 
 # Download the file
 from google.colab import files
-files.download("cleaned_dataset.csv")
+files.download("cleaned_data.csv")
