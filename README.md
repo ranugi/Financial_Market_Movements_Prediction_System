@@ -31,4 +31,35 @@ This repository contains the solution to the Quant Researcher Assessment focused
 
 GRU achieved the best performance with the lowest RMSE.
 
+ ## Setup Instructions
 
+   **Clone the repository:**
+ 
+    git clone https://github.com/ranugi/Financial_Market_Movements_Prediction_System.git
+    cd Financial_Market_Movements_Prediction_System
+
+   **Create a virtual environment:**
+   
+    python -m venv venv
+    source venv/bin/activate   # on Unix/macOS
+    venv\Scripts\activate      # on Windows
+
+   **Install dependencies:**
+   
+    pip install -r requirements.txt
+    
+
+ ## How to Run   
+
+   **Load the Trained Model**
+
+    from tensorflow.keras.models import load_model
+    model = load_model("models/trained_model.h5")
+    model.summary()
+
+   **To test a prediction, run:**
+
+    import numpy as np
+    sample_input = np.random.rand(1, 60, 5)
+    model.predict(sample_input)
+   
