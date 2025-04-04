@@ -244,3 +244,20 @@ plt.ylabel('Root Mean Squared Error')
 plt.xticks(rotation=30)
 plt.show()
 
+# save the model
+gru_model.save("models/trained_model.h5")
+
+import os
+print("trained_model.h5 exists:", os.path.exists("models/trained_model.h5"))
+
+# download the model
+from google.colab import files
+files.download("models/trained_model.h5") 
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+!cp -r models /content/drive/MyDrive/
+
+
+
