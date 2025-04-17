@@ -37,7 +37,7 @@ df = pd.read_csv(file_path)
 df = df.drop(columns=['Date'])
 
 # to predict the 'Close' price
-X = df.drop(columns=['Close'])
+X = df.drop(columns=['Close'])   #can't use as an input
 y = df['Close']  # Target variable
 
 # Split the data (80% for training, 20% for testing)
