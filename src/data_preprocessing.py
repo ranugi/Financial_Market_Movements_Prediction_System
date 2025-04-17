@@ -35,6 +35,8 @@ df = pd.read_csv(file_path)
 
 df.head()
 
+df.dtypes
+
 # Check for missing values in the dataset
 missing_values = df.isnull().sum()
 print(missing_values)
