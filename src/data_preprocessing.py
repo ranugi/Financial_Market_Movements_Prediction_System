@@ -52,6 +52,9 @@ for column in df.columns:
     else:
         print(f"No duplicates in column '{column}'.\n")
 
+# Select only numeric columns
+numeric_df = df.select_dtypes(include=[np.number])
+
 # Calculate Q1 (25th percentile) and Q3 (75th percentile) for numeric columns
 Q1 = numeric_df.quantile(0.25)
 Q3 = numeric_df.quantile(0.75)
