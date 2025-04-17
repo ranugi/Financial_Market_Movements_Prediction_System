@@ -116,7 +116,6 @@ test_df = df.iloc[split_index:]
 print(f"Training Set Shape: {train_df.shape}")
 print(f"Testing Set Shape: {test_df.shape}")
 
-import pandas as pd
 
 # Save the cleaned dataset
 df.to_csv("cleaned_dataset.csv", index=False)
